@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <title>Convertisseur CFA USD EURO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Converstisseur CFA USD EURO</h1>
+        <div class="container convertisseur">
+            <label for="amount">Montant à Convertir</label>
+            <input class="amout" type="number" name="amount" id="amout" placeholder="Entrer le montant">
+
+            <div class="conv">
+                <div class="from">
+                    <span>De</span>
+                    <select name="currency" id="from">
+                        <option value="xof" id="from-xof">FRANC CFA</option>
+                        <option value="euro" id="from-us">EURO</option>
+                        <option value="usd" id="from-usdollard">DOLLARD AMERICAIN</option>
+                    </select>
+                </div>
+
+                <div class="to">
+                    <span>À</span>
+                    <select name="currency" id="to">
+                        <option value="xof" id="to-xof">FRANC CFA</option>
+                        <option value="euro" id="to-euro">EURO</option>
+                        <option value="usd" id="to-usdollard">DOLLARD AMERICAIN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="convert-button">
+                <button id="convert-button">Convertir</button>
+            </div>
+
+            <div class="final-amount">
+                <p id="final-amount">...</p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
